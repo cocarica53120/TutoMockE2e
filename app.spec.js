@@ -2,6 +2,11 @@ var engine = require("./engine.js");
  
 describe('simple test', function () {
 
+    beforeAll(() => {
+        console.log("before");
+        browser.sleep(2000);
+    });
+
     beforeEach(function () {
         browser.get('http://localhost:8900');
         // mock
